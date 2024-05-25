@@ -1,0 +1,16 @@
+Assignment name  : ft_split
+Expected files   : ft_split.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+
+Écrivez une fonction qui prend une chaîne de caractères, la divise en mots, et
+les renvoie sous forme d'un tableau de chaînes de caractères terminé par NULL.
+
+Un "mot" est défini comme une partie d'une chaîne de caractères délimitée soit
+par des espaces/tabulations/retours à la ligne, soit par le début/fin de la
+chaîne.
+
+Votre fonction doit être déclarée comme suit :
+
+char    **ft_split(char *str);

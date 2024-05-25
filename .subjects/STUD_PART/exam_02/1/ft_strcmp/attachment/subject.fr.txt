@@ -1,0 +1,10 @@
+Assignment name  : ft_strcmp
+Expected files   : ft_strcmp.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Reproduisez le comportement de la fonction strcmp (voir man strcmp).
+
+Votre fonction doit être déclarée comme suit :
+
+int    ft_strcmp(char *s1, char *s2);

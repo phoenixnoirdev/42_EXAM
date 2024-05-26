@@ -1,0 +1,37 @@
+Assignment name  : brainfuck
+Expected files   : *.c, *.h
+Allowed functions: write, malloc, free
+--------------------------------------------------------------------------------
+
+Écrivez un programme interpréteur Brainfuck.
+
+Le code source sera donné comme premier paramètre.
+
+Le code sera toujours valide, avec pas plus de 4096 opérations.
+
+Brainfuck est un langage minimaliste. Il se compose d'un tableau d'octets (dans
+notre cas, disons 2048 octets) initialisé à zéro, et d'un pointeur sur son
+premier octet.
+
+Chaque opérateur consiste en un seul caractère :
+
+	- '>' incrémente le pointeur ;
+	- '<' décrémente le pointeur ;
+	- '+' incrémente l'octet pointé ;
+	- '-' décrémente l'octet pointé ;
+	- '.' imprime l'octet pointé sur la sortie standard ;
+	-'[' va au ']' correspondant si l'octet pointé est 0 (début de boucle) ;
+	- ']' va au '[' correspondant si l'octet pointé n'est pas 0 (fin de boucle).
+
+Tout autre caractère est un commentaire.
+
+
+Exemples:
+
+$>./brainfuck "++++++++++[>+++++++>++++++++++>+++>+<<<<-]
+>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>." | cat -e
+Hello World!$
+$>./brainfuck "+++++[>++++[>++++H>+++++i<<-]>>>++\n<<<<-]>>--------.>+++++.>." | cat -e
+Hi$
+$>./brainfuck | cat -e
+$

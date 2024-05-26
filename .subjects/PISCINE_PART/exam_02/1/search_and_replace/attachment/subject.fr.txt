@@ -3,16 +3,18 @@ Expected files   : search_and_replace.c
 Allowed functions: write, exit
 --------------------------------------------------------------------------------
 
-Write a program called search_and_replace that takes 3 arguments, the first
-arguments is a string in which to replace a letter (2nd argument) by
-another one (3rd argument).
+Écrivez un programme appelé search_and_replace qui prend 3 arguments, le premier
+arguments est une chaîne dans laquelle remplacer une lettre (2ème argument) par
+un autre (3ème argument).
 
-If the number of arguments is not 3, just display a newline.
+Si le nombre d'arguments n'est pas 3, affichez simplement une nouvelle ligne.
 
-If the second argument is not contained in the first one (the string)
-then the program simply rewrites the string followed by a newline.
+Si le deuxième argument n'est pas contenu dans le premier (la chaîne)
+alors le programme réécrit simplement la chaîne suivie d'une nouvelle ligne.
+
 
 Examples:
+
 $>./search_and_replace "Papache est un sabre" "a" "o"
 Popoche est un sobre
 $>./search_and_replace "zaz" "art" "zul" | cat -e

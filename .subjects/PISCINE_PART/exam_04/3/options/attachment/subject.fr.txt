@@ -21,6 +21,7 @@ la sortie standard, un usage du programme comme montré dans les exemples.
 
 Une option non disponible doit renvoyer "Invalid Option" suivi d'une newline.
 
+
 Exemples :
 $>./options
 options: abcdefghijklmnopqrstuvwxyz

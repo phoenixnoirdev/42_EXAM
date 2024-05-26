@@ -1,0 +1,28 @@
+Assignment name  : lcm
+Expected files   : lcm.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Écrivez une fonction qui prend deux entiers non signés en paramètres et
+retourne le PPCM calculé de ces paramètres.
+
+Le PPCM (Plus Petit Commun Multiple) de deux entiers non nuls est le plus petit
+entier positif divisible par les deux entiers.
+
+Un PPCM peut être calculé de deux façons :
+
+	- Vous pouvez calculer tous les multiples de chaque entier jusqu'à ce que
+	vous obteniez un multiple commun autre que 0.
+
+	- Vous pouvez utiliser le PGCD (Plus Grand Commun Diviseur) de ces deux
+	entiers et calculer comme suit :
+
+	LCM(x, y) = | x * y | / HCF(x, y)
+  
+  | x * y | signifie "Valeur absolue du produit de x par y"
+
+Si au moins un des entiers est nul, le PPCM est égal à 0.
+
+Votre fonction doit être prototypée comme suit :
+
+  unsigned int    lcm(unsigned int a, unsigned int b);

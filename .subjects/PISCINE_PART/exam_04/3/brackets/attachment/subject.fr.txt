@@ -1,0 +1,34 @@
+Assignment name  : brackets 
+Expected files   : *.c *.h
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Écrivez un programme qui prend un nombre indéfini de chaînes de caractères en
+arguments. Pour chaque argument, le programme imprime sur la sortie standard
+"OK" suivi d'un saut de ligne si l'expression est correctement entre
+parenthèses, sinon il imprime "Error" suivi d'un saut de ligne.
+
+Les symboles considérés comme des 'parenthèses' sont les parenthèses '(' et ')',
+les crochets '[' et ']' et les accolades '{' et '}'. Tous les autres symboles
+sont simplement ignorés.
+
+Une parenthèse ouvrante doit toujours être fermée par la bonne parenthèse
+fermante dans le bon ordre. Une chaîne de caractères qui ne contient aucune
+parenthèse est considérée comme correctement parenthésée.
+
+S'il n'y a pas d'arguments, le programme doit simplement imprimer un saut de
+ligne.
+
+
+Exemples :
+
+$> ./brackets '(johndoe)' | cat -e
+OK$
+$> ./brackets '([)]' | cat -e
+Error$
+$> ./brackets '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
+OK$
+OK$
+$> ./brackets | cat -e
+$
+$>

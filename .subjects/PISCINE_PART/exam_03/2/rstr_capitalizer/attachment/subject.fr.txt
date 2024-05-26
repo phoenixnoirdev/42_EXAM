@@ -3,18 +3,20 @@ Expected files   : rstr_capitalizer.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes one or more strings and, for each argument, puts 
-the last character that is a letter of each word in uppercase and the rest
-in lowercase, then displays the result followed by a \n.
+Écrivez un programme qui prend un ou plusieurs chaînes de caractères et, pour
+chaque argument, met la dernière lettre qui est une lettre de chaque mot en
+majuscule et le reste en minuscule, puis affiche le résultat suivi d'un \n.
 
-A word is a section of string delimited by spaces/tabs or the start/end of the
-string. If a word has a single letter, it must be capitalized.
+Un mot est une partie de la chaîne de caractères délimitée par des
+espaces/tabulations ou le début/fin de la chaîne. Si un mot a une seule lettre,
+elle doit être en majuscule.
 
-A letter is a character in the set [a-zA-Z]
+Une lettre est un caractère de l'ensemble [a-zA-Z].
 
-If there are no parameters, display \n.
+S'il n'y a pas de paramètres, affichez \n.
 
-Examples:
+
+Exemples:
 
 $> ./rstr_capitalizer | cat -e
 $
